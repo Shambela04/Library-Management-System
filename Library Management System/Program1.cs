@@ -30,7 +30,7 @@ namespace Library_Management_System
 
                 if (!int.TryParse(Console.ReadLine(), out int choice))
                 {
-                    Console.WriteLine("Invalid input. Please enter a number.");
+                    Console.WriteLine("Invalid input. Please enter a number:");
                     continue;
                 }
 
@@ -39,20 +39,20 @@ namespace Library_Management_System
                     switch (choice)
                     {
                         case 1:
-                            Console.Write("Enter Book ID: ");
+                            Console.Write("Enter Book ID : ");
                             int bookId = int.Parse(Console.ReadLine());
 
                             Console.Write("Enter Title: ");
                             string title = Console.ReadLine();
 
-                            Console.Write("Enter Author: ");
+                            Console.Write("Enter Author : ");
                             string author = Console.ReadLine();
 
                             library.AddBook(new Book(bookId, title, author));
                             break;
 
                         case 2:
-                            Console.Write("Enter Book ID to remove: ");
+                            Console.Write("Enter Book ID to remove : ");
                             int removeBookId = int.Parse(Console.ReadLine());
                             library.RemoveBook(removeBookId);
                             break;
@@ -103,7 +103,8 @@ namespace Library_Management_System
                             break;
 
                         case 9:
-                            Console.WriteLine("Exiting the system. Thank you visit again....");
+                            Console.WriteLine(" Thank you visit again....");
+                            Console.WriteLine(" Have A Good Day......");
                             exit = true;
                             break;
 

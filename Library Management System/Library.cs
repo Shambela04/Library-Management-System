@@ -20,7 +20,7 @@ namespace Library_Management_System
         public void AddBook(Book book)
         {
             Books.Add(book);
-            Console.WriteLine("Book added Successfully.");
+            Console.WriteLine("Book added Successfully....");
         }
 
         public void RemoveBook(int bookId)
@@ -31,14 +31,14 @@ namespace Library_Management_System
                 throw new Exception("Book not found.");
             }
             Books.Remove(book);
-            Console.WriteLine("Book removed Successfully.");
+            Console.WriteLine("Book removed Successfully.....");
         }
 
             //for add new member
         public void AddMember(Member member)
         {
             Members.Add(member);
-            Console.WriteLine("Member Added Successfully.");
+            Console.WriteLine("Member Added Successfully.....");
         }
              //for remove member
         public void RemoveMember(int memberId)
@@ -49,7 +49,7 @@ namespace Library_Management_System
                 throw new Exception("Member not found.");
             }
             Members.Remove(member);
-            Console.WriteLine("Member removed successfully.");
+            Console.WriteLine("Member removed successfully....");
         }
 
         public void IssueBook(int bookId, int memberId)
@@ -63,7 +63,7 @@ namespace Library_Management_System
 
             book.IsIssued = true;
             member.IssuedBooks.Add(book);
-            Console.WriteLine("Book issued successfully.");
+            Console.WriteLine("Book issued successfully.....");
         }
 
         public void ReturnBook(int bookId, int memberId)
@@ -77,7 +77,7 @@ namespace Library_Management_System
 
             book.IsIssued = false;
             member.IssuedBooks.Remove(book);
-            Console.WriteLine("Book returned successfully.");
+            Console.WriteLine("Book returned successfully......");
         }
 
         public void ListAllBooks()

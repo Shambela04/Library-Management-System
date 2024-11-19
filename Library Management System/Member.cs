@@ -22,7 +22,7 @@ namespace Library_Management_System
 
         public void DisplayMemberDetails()
         {
-            Console.WriteLine($"Member ID: {MemberId}, Name: {Name}, Issued Books: {IssuedBooks.Count}");
+            Console.WriteLine($"Member ID : {MemberId}, Name : {Name}, Issued Books : {IssuedBooks.Count}");
         }
     }
 }

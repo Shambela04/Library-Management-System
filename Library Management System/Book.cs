@@ -23,7 +23,7 @@ namespace Library_Management_System
 
         public void DisplayBookDetails()
         {
-            Console.WriteLine($"Book ID: {BookId}, Title: {Title}, Author: {Author}, Issued: {IsIssued}");
+            Console.WriteLine($"Book ID : {BookId}, Title : {Title}, Author : {Author}, Issued : {IsIssued}");
         }
     }
 }
